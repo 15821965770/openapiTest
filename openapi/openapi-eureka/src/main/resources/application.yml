@@ -1,0 +1,19 @@
+server:
+  port: 20000
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://localhost:20000/eureka
+    fetch-registry: false
+    register-with-eureka: false
+spring:
+  application:
+    name: openapi-eureka
+
+  security:
+    user:
+      name: test
+      password: test
+
